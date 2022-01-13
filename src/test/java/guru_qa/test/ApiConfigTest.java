@@ -28,7 +28,7 @@ public class ApiConfigTest {
     void apiConfigRemoteFile() throws IOException {
 
         String content = "baseUrl=https://test.example.com\nusername=testQA\ntoken=1A5S8g13h";
-        Path props = Paths.get("C:/windows/temp/token.properties");
+        Path props = Paths.get("/temp/token.properties");
 
         Files.write(props, content.getBytes(StandardCharsets.UTF_8));
 
