@@ -34,3 +34,8 @@
 #### 🚀 Запуск тестов из терминала
 * Локально ``gradle clean test -DtypeProperties=locale``
 * Удалённо ``gradle clean test -DtypeProperties=remote``
+
+#### <img src="https://user-images.githubusercontent.com/93325839/149427022-38672787-1ab0-4752-98bd-846af8eb5462.png" width="50" height="50"/> Запуск Job в Jenkins
+1. Открыть сборку [Jenkins](https://jenkins.autotests.cloud/job/009_qaguru_j_unicorn_hw15_owner/).  
+2. Нажать *"Собрать с параметрами"*.
+3. Нажать на кнопку *"Собрать"*.
