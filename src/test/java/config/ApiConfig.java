@@ -6,7 +6,12 @@ import org.aeonbits.owner.Config;
         "file:C:/windows/temp/token.properties",
         "classpath:config/token.properties"
 })
+
 public interface ApiConfig extends Config {
+
+    @Key("baseUrl")
+    @DefaultValue("https://test.example.com")
+    String baseUrl();
 
     @Key("username")
     String username();

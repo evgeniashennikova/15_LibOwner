@@ -18,22 +18,24 @@ public class ApiConfigTest {
     void apiConfigLocalFile() {
 
         ApiConfig apiConfig = ConfigFactory.create(ApiConfig.class, System.getProperties());
-        assertThat(apiConfig.token()).isEqualTo("1A5S8g13h");
+        assertThat(apiConfig.baseUrl()).isEqualTo("https://test.example.com");
         assertThat(apiConfig.username()).isEqualTo("testQA");
+        assertThat(apiConfig.token()).isEqualTo("1A5S8g13h");
 
     }
 
     @Test
     void apiConfigRemoteFile() throws IOException {
 
-        String content = "username=testQA\ntoken=1A5S8g13h";
+        String content = "baseUrl=https://test.example.com\nusername=testQA\ntoken=1A5S8g13h";
         Path props = Paths.get("C:/windows/temp/token.properties");
 
         Files.write(props, content.getBytes(StandardCharsets.UTF_8));
 
         ApiConfig apiConfig = ConfigFactory.create(ApiConfig.class, System.getProperties());
-        assertThat(apiConfig.token()).isEqualTo("1A5S8g13h");
+        assertThat(apiConfig.baseUrl()).isEqualTo("https://test.example.com");
         assertThat(apiConfig.username()).isEqualTo("testQA");
+        assertThat(apiConfig.token()).isEqualTo("1A5S8g13h");
 
         Files.delete(props);
 
