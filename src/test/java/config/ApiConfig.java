@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "file:/temp/token.properties",
+        "file:/tmp/token.properties",
         "classpath:config/token.properties"
 })
 
