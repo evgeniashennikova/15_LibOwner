@@ -39,3 +39,12 @@
 1. Открыть сборку [Jenkins](https://jenkins.autotests.cloud/job/009_qaguru_j_unicorn_hw15_owner/).  
 2. Нажать *"Собрать с параметрами"*.
 3. Нажать на кнопку *"Собрать"*.
+
+#### Видео прохождения тестов в Selenoid 
+
+https://user-images.githubusercontent.com/93325839/149427762-c9997bb1-45a4-4fa3-bf27-ff359d768ace.mp4  
+
+#### Уведомление о прохождении тестов в Telegram 
+
+![image](https://user-images.githubusercontent.com/93325839/149427952-b8f58714-b14d-42a1-b373-548d8f94df48.png)  
+
